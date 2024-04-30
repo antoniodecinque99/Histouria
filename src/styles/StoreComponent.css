@@ -1,0 +1,118 @@
+.storeComponent {
+    display: inline-flex;
+    align-items: center;
+    width: 400px;
+    height: 275px;
+}
+
+.storeComponent-item {
+    height: 92%;
+    width: 92%;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    transition: width 0.2s, height 0.2s, margin-top 0.2s, margin-left 0.2s;
+}
+
+.owned-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.owned-text {
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    margin-top: -10px;
+    top: 35%;
+
+    color: white;
+}
+
+.storeComponent-item:hover {
+    width: 94%;
+    height: 94%;
+    margin-top: -1%;
+    margin-left: -1%;
+    margin-right: -1%;
+    transition: width 0.2s, height 0.2s, margin-top 0.2s, margin-left 0.2s;
+}
+
+.storeComponent-item img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.storeComponent-item h3{
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 0;
+}
+
+.vrMenuComponent-subtitle{
+    font-size: 0.7em;
+    color: white;
+    font-weight: lighter;
+}
+
+.storeComponent-title-overlay {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    margin-bottom: 0;
+    background-color: rgba(187, 187, 187, 0.14);
+    backdrop-filter: blur(20px);
+    border-radius: 0px 0px 8px 8px;
+}
+
+.play-button-container-VR > .store-info-launch-btn {
+    background-color:#282828;
+    color:rgb(10, 132, 255);
+    border-radius: 18px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: 0px;
+    margin-top: 5px;
+    text-align: center;
+    transition: color 0.2s, background-color 0.2s;
+    display: inline-block;
+    user-select: none;
+}
+
+.store-info-launch-btn:hover {
+    background-color:#efefef;
+    color:rgb(10, 132, 255);
+    cursor: pointer;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.vr-info-launch-btn-disabled {
+    background-color:#0000004f;
+    color:rgb(139, 139, 139);
+    border-radius: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: 30px;
+    margin-top: 5px;
+    text-align: center;
+    transition: color 0.2s, background-color 0.2s;
+    display: inline-block;
+    user-select: none;
+}

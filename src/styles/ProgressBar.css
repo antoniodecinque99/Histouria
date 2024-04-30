@@ -1,0 +1,8 @@
+•progressPercent { 
+    font-weight: 600;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) ; color: #eee;
+    text-shadow: -1px 0 O#555, 0 1px O#555, 1px 0 O#555, 0 -1px O#555;
+}

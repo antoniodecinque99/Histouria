@@ -1,0 +1,34 @@
+.quizComponent {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quizComponent-item {
+    height: 350px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+.quizComponent-item img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.quizComponent-item h1{
+    position: absolute;
+    bottom: 0px;
+    padding-left: 10px;
+    padding-right: 5px;
+    border-radius: 0px 10px 10px 0px;
+    font-size: 25px;
+    color: black;
+    border: solid 2px black;
+    border-left: 0px;
+    background-color: rgba(201, 200, 200, 0.60);
+}

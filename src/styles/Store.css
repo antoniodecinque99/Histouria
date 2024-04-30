@@ -1,0 +1,87 @@
+.main-container-store {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.store {
+    width: 100%;
+    height: calc(100vh - 56px);
+    padding-bottom: 56px;
+    background: rgb(22,0,36);
+    background: linear-gradient(141deg, rgba(22,0,36,1) 0%, rgba(111,0,255,1) 100%); 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.store h1 {
+    font-size: 4em;
+    margin-top: 1%;
+    margin-bottom: 0;
+}
+
+.store h2 {
+    font-size: 1.5em;
+}
+
+.store-tourList {
+    margin-left: 2%;
+    padding-left: 1%;
+    margin-bottom: 2%;
+    /* white-space: nowrap; */
+}
+
+.store-scrollingList {
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.firstRow, .secondRow {
+    height: 270px;
+    white-space: nowrap;
+}
+
+.back-img {
+    margin-top: -5px;
+    height: 35px;
+    width: 35px;
+    margin-right: 5px;
+}
+
+.store p {
+    position: absolute;
+    top: 92%;
+}
+
+.store-newTour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 23vw;
+    height: 65vh;
+}
+
+@media screen and (max-width: 55em) {
+    .store {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 45em) {
+    .store {
+        font-size: 70%;
+    }
+}
+
+.custom-button:not(:checked) {
+    background-color: black;
+}
+
+.custom-button:hover:checked {
+    background-color: black !important;
+}
+
+

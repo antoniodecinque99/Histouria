@@ -1,0 +1,295 @@
+.vrMenuComponent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 60vh;
+}
+
+.vrMenuComponent-item {
+    height: 60vh;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    transition: width 0.2s, height 0.2s, margin-top 0.2s;
+    margin-right: 20px;
+}
+
+.vrMenuComponent-item:hover {
+    width: 335px;
+    height: 60vh;
+    margin-top: -1%;
+    transition: width 0.2s, height 0.2s, margin-top 0.2s;
+}
+
+.vrMenuComponent-item img {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.vrMenuComponent-title-overlay {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-bottom: 7%;
+    padding-top: 7%;
+    margin-bottom: 0;
+    background-color: rgba(187, 187, 187, 0.14);
+    backdrop-filter: blur(20px);
+    border-radius: 0px 0px 8px 8px;
+}
+
+.vrMenuComponent-item h3{
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 0;
+}
+
+.vrMenuComponent-subtitle{
+    font-size: 0.7em;
+    color: white;
+    font-weight: lighter;
+}
+
+.play-button-container-VR {
+    position: absolute;
+    right: 3%;
+    width: 28%;
+    bottom: 30%;
+    user-select: none;
+    text-align: center;
+}
+
+.play-button-container:hover {
+    cursor: pointer;
+}
+.play-button-container p {
+    background-color: #323136;
+    border-radius: 15px;
+    transition: background-color 0.2s;
+}
+
+.play-button-container p:hover {
+    background-color: #fdfdfd;
+    transition: background-color 0.2s;
+}
+
+.popup-overlay {
+    background: rgba(0, 0, 0, 0.282);
+    backdrop-filter: blur(15px);
+    margin-bottom: 56px;
+}
+
+.vr-info-popup {
+    width: 74% !important;
+    height: 95%;
+    margin-left: 13% !important;
+    margin-top: 5%;
+    margin-bottom: 0;
+    border-radius: 12px !important;
+    background-color: #1c1c1e !important;
+    color: white;
+    overflow-y: scroll;
+}
+
+.vr-info-popup > .close {
+    z-index: 999;
+    position: absolute;
+    right: 14%;
+    margin-top: 1%;
+    background-color: #fdfdfd;
+    color: black;
+    font-size: 36px;
+    height: 36px;
+    border-radius: 18px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.vr-info-popup > .close:hover {
+    background-color: #767676;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+.vr-info-popup > .close > svg {
+    vertical-align: top;
+}
+
+.vr-info-img {
+    height: 350px;
+}
+
+.vr-info-title-overlay {
+    position: relative;
+    width: 100%;
+    margin-top: -80px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(187, 187, 187, 0.14);
+    backdrop-filter: blur(20px);
+}
+
+.vr-info-subtitle {
+    font-weight: lighter;
+    font-size: 14px;
+    margin-top: -8px;
+    margin-right: 30px;
+}
+
+.vr-info-launch {
+    position: absolute;
+    right: 20px;
+    top: 25%;
+    height: 40%;
+}
+.vr-info-launch a {
+    text-decoration: none;
+}
+.vr-info-launch-btn {
+    background-color:#282828;
+    color:rgb(10, 132, 255);
+    border-radius: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: 30px;
+    margin-top: 5px;
+    text-align: center;
+    transition: color 0.2s, background-color 0.2s;
+    display: inline-block;
+    user-select: none;
+}
+.vr-info-launch-btn:hover {
+    background-color:#efefef;
+    color:rgb(10, 132, 255);
+    cursor: pointer;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.vr-info-launch-btn-delete {
+    background-color:#282828;
+    color:rgb(255, 55, 95);
+    border-radius: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: 30px;
+    margin-top: 5px;
+    text-align: center;
+    transition: color 0.2s, background-color 0.2s;
+    display: inline-block;
+}
+
+.vr-info-launch-btn-delete:hover {
+    background-color:#efefef;
+    color:rgb(255, 55, 95);
+    cursor: pointer;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+
+.vr-info-content {
+    display: flex;
+    flex-direction: row;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 60px;
+}
+
+.vr-info-content a {
+    text-decoration: none;
+}
+
+.technical-details-p {
+    margin-bottom: 5px;
+}
+
+.deleteTourButtonContainer {
+    margin-top: 15px;
+    text-align: center;
+    border-top: 1px solid #4f4f52;
+}
+.deleteTourButton {
+    width: 150px;
+    align-self: center !important;
+    text-align: center;
+    color: red;
+    background-color: rgba(0, 0, 0, 0.282);
+    border-radius: 18px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    user-select: none;
+    transition: background-color 0.2s;
+}
+
+.deleteTourButton:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.deleteTourDescription {
+    font-weight: lighter;
+    margin-top: 5px;
+}
+
+.tooltipButtonsContainer {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.tooltipDeleteButton {
+    display: inline-block;
+    width: 40%;
+    margin-right: 10%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 18px !important;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.tooltipKeepButton {
+    display: inline-block;
+    width: 40%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 18px !important;
+    color: black;
+    border-radius: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.tooltipLaunchButton {
+    display: inline-block;
+    width: 100%;
+    margin-right: 10%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: white;
+    color: rgb(10, 132, 255);
+    font-weight: bold;
+    border-radius: 5px;
+    user-select: none;
+    cursor: pointer;
+}

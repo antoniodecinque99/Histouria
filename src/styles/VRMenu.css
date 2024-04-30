@@ -1,0 +1,62 @@
+.vrmenu {
+    width: 100%;
+    height: calc(100vh - 56px);
+    background: rgb(22,0,36);
+    background: linear-gradient(141deg, rgba(22,0,36,1) 0%, rgba(111,0,255,1) 100%); 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vrmenu h1 {
+    font-size: 4em;
+    margin-top: 1%;
+    margin-bottom: 0;
+}
+
+.vrmenu h2 {
+    font-size: 1.5em;
+}
+
+.vrMenu-category-title {
+    padding-left: 3%;
+    padding-right: 3%;
+    color: white;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+.vrMenu-tourList {
+    margin-left: 3%;
+    height: 68vh;
+    margin-bottom: 2%;
+    overflow: auto;
+}
+.vrMenu-scrollingList {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+    padding-right: 100px;
+    padding-left: 0%;
+}
+
+.back-img {
+    margin-top: -5px;
+    height: 35px;
+    width: 35px;
+    margin-right: 5px;
+}
+
+
+
+@media screen and (max-width: 55em) {
+    .vrmenu {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 45em) {
+    .vrmenu {
+        font-size: 70%;
+    }
+}

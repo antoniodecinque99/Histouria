@@ -1,0 +1,17 @@
+.qc-answers {
+    margin-left: 20px;
+}
+
+.qc-content h3 {
+    margin-left: 0;
+}
+
+.qc-content {
+    width: 97%;
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 15px;
+    border: solid grey 1px;
+    border-radius: 20px;
+}
